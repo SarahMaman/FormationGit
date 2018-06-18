@@ -4,3 +4,36 @@ Read more at http://www.dico-poesie.com/poemes.php?mot=court#u5655mFi3osQ7d7r.99
 
 
 Modification du poème depuis mon terminal puis envoi des modifs vers GitHub grâce à un git push , après avoir effectué un commit qui explique tout cela, bien entendu !
+
+
+Après la modif depuis mon terminal:
+[smaman@localhost Téléchargements]$ cd FormationGit
+[smaman@localhost FormationGit]$ ls -ltrah
+total 28K
+drwxr-xr-x. 13 smaman smaman  12K 18 juin  10:07 ..
+-rw-rw-r--.  1 smaman smaman  104 18 juin  10:07 README.md
+-rw-rw-r--.  1 smaman smaman  252 18 juin  10:07 poeme
+drwxrwxr-x.  8 smaman smaman 4,0K 18 juin  10:07 .git
+drwxrwxr-x.  3 smaman smaman 4,0K 18 juin  10:07 .
+[smaman@localhost FormationGit]$ vi poeme
+[smaman@localhost FormationGit]$ git add poeme 
+[smaman@localhost FormationGit]$ git commit -am "ajout d'une modif au poeme" poeme 
+fatal: Spécifier des chemins avec l'option -a n'a pas de sens.
+[smaman@localhost FormationGit]$ git commit -m "ajout d'une modif au poeme" poeme 
+[master 47bda40] ajout d'une modif au poeme
+ 1 file changed, 3 insertions(+)
+[smaman@localhost FormationGit]$ git push origin master
+Username for 'https://github.com': SarahMaman
+Password for 'https://SarahMaman@github.com': 
+Décompte des objets: 3, fait.
+Delta compression using up to 4 threads.
+Compression des objets: 100% (3/3), fait.
+Écriture des objets: 100% (3/3), 452 bytes | 452.00 KiB/s, fait.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/SarahMaman/FormationGit.git
+   40c6734..47bda40  master -> master
+
+
+
+Voici une autre modif depuis GitHib
